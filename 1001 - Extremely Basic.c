@@ -1,14 +1,19 @@
+// 1001 - Extremely Basic - Beecrowd
 #include <stdio.h>
 
 int main() {
+    // declaring variables
+    int num1, num2, sum;
 
-    int A, B, X;
-    scanf("%d", &A);
-    scanf("%d", &B);
+    // taking inputs
+    scanf("%d", &num1);
+    scanf("%d", &num2);
 
-    X = A + B;
+    // calculating the sum of the numbers
+    sum = num1 + num2;
 
-    printf("X = %d\n", X);
+    // printing the sum of the numbers
+    printf("X = %d\n", sum);
 
     return 0;
 }
