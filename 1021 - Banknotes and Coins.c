@@ -12,17 +12,20 @@ int main() {
     scanf("%lf", &initial_decomposible_cash);
 
     // converting available cash into cents to avoid floating point numbers and rounding errors
-    int available_decomposible_cash = initial_decomposible_cash * 100;
+    int available_decomposible_cash = round(initial_decomposible_cash * 100);
 
     // decomposing the cash into banknotes and printing
     printf("NOTAS:\n");
     for (int i = 0; i < 6; i++) {
         // working with ith banknote
         int current_note = available_notes[i];
+        
         // calculating number of banknotes after decomposition
         int decomposed_notes_number = available_decomposible_cash / current_note;
+
         // calculating leftover cash
         available_decomposible_cash %= current_note;
+
         // printing number of notes
         printf("%d nota(s) de R$ %d.00\n", decomposed_notes_number, current_note / 100);
     }
@@ -32,10 +35,13 @@ int main() {
     for (int i = 0; i <= 5; i++) {
         // working with ith coin
         int current_coin = available_coins[i];
+
         // calculating the number of coins after decomposition
         int decomposed_coins_number = available_decomposible_cash / current_coin;
+
         // calculating the leftover cash
         available_decomposible_cash %= current_coin;
+        
         // printing the number of coins
         printf("%d moeda(s) de R$ %.2lf\n", decomposed_coins_number, (double)(current_coin) / 100);
     }
