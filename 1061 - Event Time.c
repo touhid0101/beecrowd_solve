@@ -1,4 +1,4 @@
-// 1061 - Event Time  Beecrowd
+// 1061 - Event Time - Beecrowd
 #include <stdio.h>
 
 int main() {
@@ -23,7 +23,8 @@ int main() {
     // clang-format on
 
     // printing the output
-    printf("%d dia(s)\n%d hora(s)\n%d minuto(s)\n%d segundo(s)\n", duration_day, duration_H, duration_M, duration_S);
+    printf("%d dia(s)\n%d hora(s)\n%d minuto(s)\n%d segundo(s)\n", duration_day, duration_H,
+           duration_M, duration_S);
 
     return 0;
 }
