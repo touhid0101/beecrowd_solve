@@ -1,6 +1,6 @@
 // 1929 - Triangle - Beecrowd
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 int main() {
     // taking length of 4 rods as input
@@ -11,7 +11,6 @@ int main() {
     for (int i = 0, swap_count = 1; i < 4; i++) {
         if (swap_count != 1) {
             for (int j = 0; j < 3; j++) {
-
             }
         } else {
             break;
